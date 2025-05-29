@@ -5,15 +5,18 @@ import { useEffect } from "react";
 import useScrollPosition from "~/hooks/use-scroll-position";
 import { NavLink } from "./nav-link";
 import { useNavContext } from "~/context/nav-context";
-import { usePathname } from "next/navigation";
 import BurgerMenuIcon from "../icons/burgermenu-icon";
+import { useTranslations } from "next-intl";
+import { I18nToggle } from "../intl/i18n-toggle";
+import { usePathname } from "~/i18n/navigation";
+import { type Locale } from "~/i18n/routing";
 
 const routes = {
   welkom: "/",
   over: "/over",
 };
 
-const NavComponents = () => {
+const NavComponents = ({ locale }: { locale: Locale }) => {
   const {
     mobileMenuRef,
     mobileMenuHandlerRef,
@@ -23,6 +26,8 @@ const NavComponents = () => {
 
   const path = usePathname();
 
+  const t = useTranslations("navigation");
+
   useEffect(() => {
     setMobileMenuVisible(false);
   }, [setMobileMenuVisible, path]);
@@ -31,7 +36,7 @@ const NavComponents = () => {
   const hideTopMenu = path === "/";
 
   return (
-    <div>
+    <div className="relative">
       <nav
         ref={mobileMenuRef}
         className={`fixed right-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-amber-50 text-left ${
@@ -41,12 +46,12 @@ const NavComponents = () => {
         <div className="flex h-full w-full flex-col justify-center">
           <NavLink
             href={routes.welkom}
-            title={"Welkom"}
+            title={t("home")}
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <NavLink
             href={routes.over}
-            title={"Over ons"}
+            title={t("about")}
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <div className="border-b border-dotted border-amber-950" />
@@ -58,6 +63,7 @@ const NavComponents = () => {
         <div
           className={`relative flex h-[80px] flex-wrap items-center justify-center ${isOnTop ? "bg-transparent" : "bg-backgroundStart"} px-4 py-1`}
         >
+          <I18nToggle locale={locale} path={path} />
           <div
             className={`${hideTopMenu ? "-translate-y-20" : "translate-y-0"} absolute flex flex-wrap items-center justify-center transition-transform duration-1000 ease-in-out`}
           >

@@ -1,0 +1,23 @@
+{
+  "navigation": {
+    "home": "Welcome",
+    "about": "About me"
+  },
+  "home": {
+    "welcomeMessage": "Welcome to the website of <b>House of Shakti</b>. This site is under construction, as you can see. A little more patience..."
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "My spiritual path didn’t begin with great insights, but with pain. There was a time when I completely lost myself. My body was in survival mode. I couldn’t sleep without medication, my hair was falling out from stress, and I felt trapped in an endless stream of fear, restlessness, and sadness. My mind never stopped. My heart ached. My body was crying out for rest and safety — but I no longer knew how.",
+    "p2": "I talked. A lot. With therapists, friends, to myself. And although it helped to share my story, I noticed that nothing truly changed. The core remained untouched. I felt: there’s something inside me that words can’t reach.",
+    "p3": "Then Kundalini crossed my path. My first session was intense. My body moved, my emotions surfaced, I cried for no reason. But what happened afterward was even more profound: I felt strong. Energized. Alive. I felt a renewed sense of care for myself, a drive to embrace life. My fears calmed. My insecurities slowly dissolved. I felt peace. Trust. A deep, quiet love for myself.",
+    "p4": "That moment changed my life.",
+    "p5": "Not long after, I knew for sure: this is what I want to share. Not from ‘knowledge’, but from experience. Because I myself have journeyed from surviving to coming home. Because I have felt how something inside you can open that words can never reach.",
+    "p6": "As a Kundalini facilitator, I offer a safe, loving space. I work gently, intuitively, without judgment. I’m grounded, warm, soft yet fiery— and I see you. Even if you don’t fully see yourself yet.",
+    "p7": "Whether you’re lying still or crying, moving or ‘feeling nothing’ — your energy knows exactly what you need and can handle at that moment. I’ve seen people lying still while an entire journey unfolded within. Others released tears whose origin they didn’t know — and afterward felt lighter than ever.",
+    "p8": "Kundalini works precisely where you’re ready to heal. You don’t need to understand it. You just need to lie down and trust that your system knows what it’s doing.",
+    "p9": "I guide people who feel that talking is no longer enough. Who long for inner peace, self-love, and spiritual depth. Who are ready to break through blocks and patterns and reclaim their power.",
+    "p10": "If you’re reading this and feel: yes, this is for me — that’s no coincidence.",
+    "p11": "You are welcome. Exactly as you are now. And I hold the space for you."
+  }
+}

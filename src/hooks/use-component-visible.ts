@@ -1,7 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 
-const excludedElements = ["auto-play-button", "home-logo"];
-
 export default function useComponentVisible(initialIsVisible: boolean) {
   const [isComponentVisible, setIsComponentVisible] =
     useState(initialIsVisible);
@@ -21,10 +19,6 @@ export default function useComponentVisible(initialIsVisible: boolean) {
       handlerRef.current &&
       !handlerRef.current.contains(event.target as Node)
     ) {
-      if (excludedElements.includes(String((event.target as HTMLElement).id))) {
-        return;
-      }
-
       setIsComponentVisible(false);
     }
   };
