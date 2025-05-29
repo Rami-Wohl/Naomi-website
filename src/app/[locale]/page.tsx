@@ -18,9 +18,9 @@ export default function HomePage() {
               b: (chunks) => <b>{chunks}</b>,
             })}
           </p>
-          <div className="mb-8 flex w-full items-center justify-center">
-            <CircularImage alt="Naomi's hoofd" src={naomi.src} size={200} />
-          </div>
+        </div>
+        <div className="mb-8 flex w-full items-center justify-center">
+          <CircularImage alt="Naomi's hoofd" src={naomi.src} size={200} />
         </div>
       </ContentSection>
     </div>

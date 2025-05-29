@@ -21,8 +21,8 @@ const main = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Naomi Kundalini",
-  description: "Beschrijving hier TODO",
+  title: "House of Shakti",
+  description: "Gecertificeerd Kundalini expert",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
