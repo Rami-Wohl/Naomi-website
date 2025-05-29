@@ -7,10 +7,10 @@ import naomi from "../../public/assets/images/naomi.jpeg";
 export default function HomePage() {
   return (
     <div className="flex h-screen w-screen flex-col items-center">
-      <ContentSection title="welkom">
+      <ContentSection title="House of Shakti">
         <p>
-          Welkom op de website van de <b>Naomi Kundalini Panini</b>. Deze site
-          is onder constructie, zoals je ziet. Nog even geduld...
+          Welkom op de website van <b>House of Shakti</b>. Deze site is onder
+          constructie, zoals je ziet. Nog even geduld...
         </p>
         <div className="mb-8 flex w-full items-center justify-center">
           <CircularImage alt="Naomi's hoofd" src={naomi.src} size={200} />

@@ -15,7 +15,12 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${GeistSans.variable}`}>
-      <body className="h-screen bg-white bg-cover bg-fixed bg-center bg-no-repeat">
+      <body
+        className="h-screen bg-white bg-cover bg-fixed bg-center bg-no-repeat"
+        // style={{
+        //   backgroundImage: "url('../../../public/assets/images/naomi.jpeg')",
+        // }}
+      >
         <LayoutWithNav>{children}</LayoutWithNav>
       </body>
     </html>
