@@ -9,20 +9,18 @@ export default function HomePage() {
   const t = useTranslations("home");
 
   return (
-    <div className="flex h-screen w-screen flex-col items-center">
-      <ContentSection title="House of Shakti">
-        <div className="font-main mx-auto max-w-3xl">
-          <p>
-            {" "}
-            {t.rich("welcomeMessage", {
-              b: (chunks) => <b>{chunks}</b>,
-            })}
-          </p>
-        </div>
-        <div className="mb-8 flex w-full items-center justify-center">
-          <CircularImage alt="Naomi's hoofd" src={naomi.src} size={200} />
-        </div>
-      </ContentSection>
-    </div>
+    <ContentSection title="House of Shakti">
+      <div className="font-main mx-auto max-w-3xl">
+        <p>
+          {" "}
+          {t.rich("welcomeMessage", {
+            b: (chunks) => <b>{chunks}</b>,
+          })}
+        </p>
+      </div>
+      <div className="mb-8 flex w-full items-center justify-center">
+        <CircularImage alt="Naomi's hoofd" src={naomi.src} size={200} />
+      </div>
+    </ContentSection>
   );
 }

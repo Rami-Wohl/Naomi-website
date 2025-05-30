@@ -2,7 +2,6 @@
 "use client";
 
 import { useEffect } from "react";
-import useScrollPosition from "~/hooks/use-scroll-position";
 import { NavLink } from "./nav-link";
 import { useNavContext } from "~/context/nav-context";
 import BurgerMenuIcon from "../icons/burgermenu-icon";
@@ -16,7 +15,13 @@ const routes = {
   over: "/over",
 };
 
-const NavComponents = ({ locale }: { locale: Locale }) => {
+const NavComponents = ({
+  locale,
+  isOnTop,
+}: {
+  locale: Locale;
+  isOnTop: boolean;
+}) => {
   const {
     mobileMenuRef,
     mobileMenuHandlerRef,
@@ -31,9 +36,6 @@ const NavComponents = ({ locale }: { locale: Locale }) => {
   useEffect(() => {
     setMobileMenuVisible(false);
   }, [setMobileMenuVisible, path]);
-
-  const { isOnTop } = useScrollPosition();
-  const hideTopMenu = path === "/";
 
   return (
     <div className="relative">
@@ -58,19 +60,12 @@ const NavComponents = ({ locale }: { locale: Locale }) => {
         </div>
       </nav>
       <div
-        className={`fixed z-[2] w-full transition-transform duration-500 ease-in-out`}
+        className={`fixed z-10 w-full transition-transform duration-500 ease-in-out`}
       >
         <div
-          className={`relative flex h-[80px] flex-wrap items-center justify-center ${isOnTop ? "bg-transparent" : "bg-backgroundStart"} px-4 py-1`}
+          className={`relative flex h-[80px] flex-wrap items-center justify-between bg-amber-950 transition-all duration-500 ${isOnTop ? "bg-opacity-0" : "bg-opacity-90"} px-4 py-1 lg:bg-opacity-0`}
         >
           <I18nToggle locale={locale} path={path} />
-          <div
-            className={`${hideTopMenu ? "-translate-y-20" : "translate-y-0"} absolute flex flex-wrap items-center justify-center transition-transform duration-1000 ease-in-out`}
-          >
-            <h2 className="flex flex-row gap-6 font-sans text-base text-black text-opacity-80"></h2>
-          </div>
-
-          <div className="mr-auto flex flex-row items-center"></div>
           <div ref={mobileMenuHandlerRef}>
             <button
               className="z-10 mr-auto flex h-10 w-10 scale-75 cursor-pointer flex-col justify-around border-none p-0"
