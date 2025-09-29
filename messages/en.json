@@ -1,7 +1,12 @@
 {
   "navigation": {
     "home": "Welcome",
-    "about": "About me"
+    "about": "About me",
+    "kundalini": "Kundalini",
+    "ttc": "TTC®",
+    "faq": "FAQ",
+    "prices": "Prices",
+    "contact": "Contact"
   },
   "home": {
     "welcomeMessage": "Welcome to the website of <b>House of Shakti</b>. This site is under construction, as you can see. A little more patience..."
@@ -19,5 +24,25 @@
     "p9": "I guide people who feel that talking is no longer enough. Who long for inner peace, self-love, and spiritual depth. Who are ready to break through blocks and patterns and reclaim their power.",
     "p10": "If you’re reading this and feel: yes, this is for me — that’s no coincidence.",
     "p11": "You are welcome. Exactly as you are now. And I hold the space for you."
+  },
+  "kundalini": {
+    "title": "Kundalini Page",
+    "text": "This is text"
+  },
+  "ttc": {
+    "title": "TTC® - Talking To the Chakra's",
+    "text": "This is text"
+  },
+  "prices": {
+    "title": "Prices",
+    "text": "This is text"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "text": "This is text"
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "This is text"
   }
 }

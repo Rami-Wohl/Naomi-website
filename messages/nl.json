@@ -1,7 +1,12 @@
 {
   "navigation": {
     "home": "Welkom",
-    "about": "Over mij"
+    "about": "Over mij",
+    "kundalini": "Kundalini",
+    "ttc": "TTC®",
+    "faq": "FAQ",
+    "prices": "Prijzen",
+    "contact": "Contact"
   },
   "home": {
     "welcomeMessage": "Welkom op de website van <b>House of Shakti</b>. Deze site is onder constructie, zoals je ziet. Nog even geduld..."
@@ -19,5 +24,25 @@
     "p9": "Ik begeleid mensen die voelen dat praten niet genoeg is. Die verlangen naar innerlijke rust, zelfliefde en spirituele diepgang. Die klaar zijn om blokkades en patronen te doorbreken en hun kracht terug te claimen.",
     "p10": "Als jij dit leest en voelt: ja, dit is voor mij — dan is dat geen toeval.",
     "p11": "Je bent welkom. Precies zoals je nu bent. En ik hou de ruimte voor je."
+  },
+  "kundalini": {
+    "title": "Kundalini Pagina",
+    "text": "Dit is text"
+  },
+  "ttc": {
+    "title": "TTC® - Talking To the Chakra's",
+    "text": "Dit is text"
+  },
+  "prices": {
+    "title": "Prijzen",
+    "text": "Dit is text"
+  },
+  "faq": {
+    "title": "Veelgestelde Vragen",
+    "text": "Dit is text"
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "Dit is text"
   }
 }

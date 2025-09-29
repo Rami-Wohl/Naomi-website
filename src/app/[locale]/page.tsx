@@ -10,7 +10,7 @@ export default function HomePage() {
 
   return (
     <ContentSection title="House of Shakti">
-      <div className="font-main mx-auto max-w-3xl">
+      <div className="mx-auto max-w-3xl font-main">
         <p>
           {" "}
           {t.rich("welcomeMessage", {

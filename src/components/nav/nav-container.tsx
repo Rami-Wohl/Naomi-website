@@ -13,6 +13,11 @@ import { type Locale } from "~/i18n/routing";
 const routes = {
   welkom: "/",
   over: "/over",
+  kundalini: "/kundalini",
+  ttc: "/ttc",
+  faq: "/faq",
+  prices: "/prijzen",
+  contact: "/contact",
 };
 
 const NavComponents = ({
@@ -54,6 +59,31 @@ const NavComponents = ({
           <NavLink
             href={routes.over}
             title={t("about")}
+            closeMenu={() => setMobileMenuVisible(false)}
+          />
+          <NavLink
+            href={routes.kundalini}
+            title={t("kundalini")}
+            closeMenu={() => setMobileMenuVisible(false)}
+          />
+          <NavLink
+            href={routes.ttc}
+            title={t("ttc")}
+            closeMenu={() => setMobileMenuVisible(false)}
+          />
+          <NavLink
+            href={routes.prices}
+            title={t("prices")}
+            closeMenu={() => setMobileMenuVisible(false)}
+          />
+          <NavLink
+            href={routes.faq}
+            title={t("faq")}
+            closeMenu={() => setMobileMenuVisible(false)}
+          />
+          <NavLink
+            href={routes.contact}
+            title={t("contact")}
             closeMenu={() => setMobileMenuVisible(false)}
           />
           <div className="border-b border-dotted border-amber-950" />
