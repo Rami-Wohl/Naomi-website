@@ -6,12 +6,12 @@ import { routing } from "~/i18n/routing";
 import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 import { LayoutWithNav } from "~/components/nav/layout-with-nav";
-import { Caveat, Montserrat } from "next/font/google";
+import { Montserrat, Raleway } from "next/font/google";
 
-const caveat = Caveat({
+const raleway = Raleway({
   subsets: ["latin"],
   weight: ["400", "700"], // adjust as needed
-  variable: "--font-caveat", // optional: for Tailwind integration
+  variable: "--font-raleway", // optional: for Tailwind integration
 });
 
 const main = Montserrat({
@@ -41,7 +41,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} className={`${GeistSans.variable}`}>
       <body
-        className={`${caveat.variable} ${main.variable} font-roboto h-screen bg-white bg-cover bg-fixed bg-center bg-no-repeat`}
+        className={`${raleway.variable} ${main.variable} font-roboto h-screen bg-white bg-cover bg-fixed bg-center bg-no-repeat`}
         style={{
           backgroundImage: "url('assets/images/mandala-gold.jpg')",
         }}

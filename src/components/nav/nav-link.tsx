@@ -15,7 +15,7 @@ export const NavLink = ({
 
   return (
     <Link href={href} className="w-full">
-      <div className="w-full border-collapse cursor-pointer border-t border-dotted border-amber-950 py-4 text-center font-sans text-[1.1rem] font-semibold tracking-[0.1rem] text-amber-950 no-underline hover:bg-amber-950 hover:bg-opacity-90 hover:text-white hover:text-opacity-100">
+      <div className="w-full border-collapse cursor-pointer border-t border-dotted border-emerald-950 py-4 text-center font-sans text-[1.1rem] font-semibold tracking-[0.1rem] text-emerald-950 no-underline hover:bg-emerald-950 hover:bg-opacity-90 hover:text-white hover:text-opacity-100">
         <button className="uppercase" onClick={handleClick}>
           {title}
         </button>

@@ -46,7 +46,7 @@ const NavComponents = ({
     <div className="relative">
       <nav
         ref={mobileMenuRef}
-        className={`fixed right-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-amber-50 text-left ${
+        className={`fixed right-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-emerald-50 text-left ${
           isMobileMenuVisible ? "translate-x-0" : "translate-x-full"
         } min-h-full w-full pt-[55px] transition-transform duration-500 ease-in-out lg:w-80`}
       >
@@ -86,14 +86,14 @@ const NavComponents = ({
             title={t("contact")}
             closeMenu={() => setMobileMenuVisible(false)}
           />
-          <div className="border-b border-dotted border-amber-950" />
+          <div className="border-b border-dotted border-emerald-950" />
         </div>
       </nav>
       <div
         className={`fixed z-10 w-full transition-transform duration-500 ease-in-out`}
       >
         <div
-          className={`relative flex h-[80px] flex-wrap items-center justify-between bg-amber-950 transition-all duration-500 ${isOnTop ? "bg-opacity-0" : "bg-opacity-90"} px-4 py-1 lg:bg-opacity-0`}
+          className={`relative flex h-[80px] flex-wrap items-center justify-between bg-emerald-950 transition-all duration-500 ${isOnTop ? "bg-opacity-0" : "bg-opacity-90"} px-4 py-1 lg:bg-opacity-0`}
         >
           <I18nToggle locale={locale} path={path} />
           <div ref={mobileMenuHandlerRef}>

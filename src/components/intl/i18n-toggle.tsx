@@ -42,7 +42,7 @@ export function I18nToggle({ locale, path }: { locale: Locale; path: string }) {
       {isComponentVisible && (
         <div
           ref={ref}
-          className="font-main absolute left-2 top-14 mt-2 flex w-40 flex-col rounded border border-gray-300 bg-amber-50 shadow"
+          className="absolute left-2 top-14 mt-2 flex w-40 flex-col rounded border border-gray-300 bg-emerald-50 font-main shadow"
         >
           <Link href={path} locale="en">
             <div>
