@@ -30,34 +30,20 @@ export default function PricesPage() {
       <div className="mx-auto max-w-3xl font-main">
         <div className="w-full">
           <Separator />
-          <p className="mb-6 mt-4 pl-2">{t("paragraph1")}</p>
+          <p className="mb-6 mt-4 pl-2">{t("text")}</p>
 
           <div className="mx-2 flex flex-col rounded-lg bg-white bg-opacity-10">
-            <PriceRow
-              service={t("services.master-regular")}
-              price={t("prices.master-regular")}
-            />
-            <PriceRow
-              service={t("services.master-stem")}
-              price={t("prices.master-stem")}
-            />
-            <PriceRow service={t("services.mix")} price={t("prices.mix")} />
-            <PriceRow
-              service={t("services.writing")}
-              price={t("prices.writing")}
-            />
-            <PriceRow
-              service={t("services.ghost-writing")}
-              price={t("prices.ghost-writing")}
-            />
+            <PriceRow service={t("text")} price={t("text")} />
+            <PriceRow service={t("text")} price={t("text")} />
+            <PriceRow service={t("text")} price={t("text")} />
+            <PriceRow service={t("text")} price={t("text")} />
+            <PriceRow service={t("text")} price={t("text")} />
           </div>
-          <span className="mx-2 text-xs">{t("disclaimer")}</span>
+          <span className="mx-2 text-xs">{t("text")}</span>
 
-          <h2 className="mb-6 mt-8 pl-2 text-lg font-semibold">
-            {t("header2")}
-          </h2>
-          <p className="mb-6 mt-4 pl-2">{t("paragraph2")}</p>
-          <p className="mb-6 mt-4 pl-2">{t("paragraph3")}</p>
+          <h2 className="mb-6 mt-8 pl-2 text-lg font-semibold">{t("text")}</h2>
+          <p className="mb-6 mt-4 pl-2">{t("text")}</p>
+          <p className="mb-6 mt-4 pl-2">{t("text")}</p>
         </div>
       </div>
     </ContentSection>
