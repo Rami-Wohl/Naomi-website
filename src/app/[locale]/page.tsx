@@ -9,7 +9,7 @@ export default function HomePage() {
   const t = useTranslations("home");
 
   return (
-    <ContentSection title="House of Shakti">
+    <ContentSection title="EmBody" subtitle="by Naomi">
       <div className="mx-auto max-w-3xl font-main">
         <p>
           {" "}

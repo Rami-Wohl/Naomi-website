@@ -7,8 +7,11 @@ export default {
     extend: {
       fontFamily: {
         sans: ["var(--font-geist-sans)", ...fontFamily.sans],
-        raleway: ["var(--font-raleway)", "cursive"],
+        headers: ["var(--font-headers)", "cursive"],
         main: ["var(--font-main)", "serif"],
+      },
+      backgroundImage: {
+        gold: "linear-gradient(180deg, #CFB670 0%, #9B7A38 45%, #E4C879 75%, #7A5C24 100%)",
       },
     },
   },

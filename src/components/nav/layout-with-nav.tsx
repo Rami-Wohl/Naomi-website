@@ -23,7 +23,7 @@ export const LayoutWithNav = ({
         <div className="flex h-screen w-screen flex-col items-center">
           <div
             ref={scrollRef}
-            className={`relative flex h-full w-full flex-col items-center overflow-y-scroll bg-emerald-950 bg-opacity-70 px-2 font-sans text-emerald-950`}
+            className={`relative flex h-full w-full flex-col items-center overflow-y-scroll bg-amber-950 bg-opacity-10 px-2 font-sans text-emerald-950`}
           >
             {children}
           </div>
