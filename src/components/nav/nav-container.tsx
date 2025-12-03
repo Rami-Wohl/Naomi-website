@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import { I18nToggle } from "../intl/i18n-toggle";
 import { usePathname } from "~/i18n/navigation";
 import { type Locale } from "~/i18n/routing";
+import { LogoCard } from "./logo";
 
 const routes = {
   welkom: "/",
@@ -46,8 +47,8 @@ const NavComponents = ({
     <div className="relative">
       <nav
         ref={mobileMenuRef}
-        className={`fixed right-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 bg-emerald-50 text-left ${
-          isMobileMenuVisible ? "translate-x-0" : "translate-x-full"
+        className={`bg-contrast fixed left-0 top-0 z-[2] flex h-[calc(100%-55px)] flex-col items-center justify-between border-r-2 border-[#545c68] border-opacity-10 text-left ${
+          isMobileMenuVisible ? "translate-x-0" : "-translate-x-full"
         } min-h-full w-full pt-[55px] transition-transform duration-500 ease-in-out lg:w-80`}
       >
         <div className="flex h-full w-full flex-col justify-center">
@@ -86,16 +87,15 @@ const NavComponents = ({
             title={t("contact")}
             closeMenu={() => setMobileMenuVisible(false)}
           />
-          <div className="border-b border-dotted border-emerald-950" />
+          <div className="border-b border-dotted" />
         </div>
       </nav>
       <div
         className={`fixed z-10 w-full transition-transform duration-500 ease-in-out`}
       >
         <div
-          className={`relative flex h-[80px] flex-wrap items-center justify-between bg-emerald-950 transition-all duration-500 ${isOnTop ? "bg-opacity-0" : "bg-opacity-90"} px-4 py-1 lg:bg-opacity-0`}
+          className={`relative flex h-[80px] items-center justify-between transition-all duration-500 ${isOnTop ? "bg-opacity-0" : "bg-opacity-90"} px-4 py-1 lg:bg-opacity-0`}
         >
-          <I18nToggle locale={locale} path={path} />
           <div ref={mobileMenuHandlerRef}>
             <button
               className="z-10 mr-auto flex h-10 w-10 scale-75 cursor-pointer flex-col justify-around border-none p-0"
@@ -105,12 +105,14 @@ const NavComponents = ({
               tabIndex={1}
             >
               <BurgerMenuIcon
-                className={`${isMobileMenuVisible ? "stroke-black" : "stroke-white"}`}
+                className={`stroke-gold`}
                 height={45}
                 width={45}
               />{" "}
             </button>
           </div>
+          <LogoCard />
+          <I18nToggle locale={locale} path={path} />
         </div>
       </div>
     </div>

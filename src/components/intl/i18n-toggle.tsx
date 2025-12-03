@@ -12,7 +12,7 @@ function getLabel(locale: Locale) {
           aria-label="Nederlands"
           height={24}
           width={24}
-          className="rounded-full border-2 border-solid border-white border-opacity-20 bg-white bg-opacity-20"
+          className="rounded-md border-2 border-solid border-white border-opacity-20 bg-opacity-20"
         />
       );
     case "en":
@@ -21,7 +21,7 @@ function getLabel(locale: Locale) {
           aria-label="English"
           height={24}
           width={24}
-          className="rounded-full border-2 border-solid border-white border-opacity-20 bg-white bg-opacity-20"
+          className="rounded-md border-2 border-solid border-white border-opacity-20 bg-opacity-20"
         />
       );
   }
@@ -42,28 +42,28 @@ export function I18nToggle({ locale, path }: { locale: Locale; path: string }) {
       {isComponentVisible && (
         <div
           ref={ref}
-          className="absolute left-2 top-14 mt-2 flex w-40 flex-col rounded border border-gray-300 bg-emerald-50 font-main shadow"
+          className="bg-contrast text-gold absolute right-2 top-14 mt-2 flex w-40 flex-col rounded border border-gray-300 font-main shadow"
         >
           <Link href={path} locale="en">
             <div>
-              <div className="mb-2 flex flex-row items-center gap-3 p-1 hover:bg-white hover:text-opacity-100">
+              <div className="mb-2 flex flex-row items-center gap-3 bg-white bg-opacity-0 p-1 hover:bg-opacity-50 hover:text-opacity-100">
                 <FlagUKIcon
                   aria-label="English"
                   height={24}
                   width={24}
-                  className="rounded-full border-2 border-solid border-white border-opacity-10 bg-white bg-opacity-10"
+                  className="rounded-md border-2 border-solid border-white border-opacity-10 bg-white bg-opacity-10"
                 />
                 <span>English</span>
               </div>
             </div>
           </Link>
           <Link href={path} locale="nl">
-            <div className="flex flex-row items-center gap-3 p-1 text-opacity-70 hover:bg-white hover:text-opacity-100">
+            <div className="flex flex-row items-center gap-3 bg-white bg-opacity-0 p-1 hover:bg-opacity-50 hover:text-opacity-100">
               <FlagNLIcon
                 aria-label="Nederlands"
                 height={24}
                 width={24}
-                className="rounded-full border-2 border-solid border-white border-opacity-10 bg-white bg-opacity-10"
+                className="rounded-md border-2 border-solid border-white border-opacity-10 bg-white bg-opacity-10"
               />
               <span>Nederlands</span>
             </div>

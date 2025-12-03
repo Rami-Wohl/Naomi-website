@@ -9,12 +9,12 @@ export default function HomePage() {
   const t = useTranslations("home");
 
   return (
-    <ContentSection title="EmBody" subtitle="by Naomi">
+    <ContentSection title="">
       <div className="mx-auto max-w-3xl font-main">
         <p>
           {" "}
           {t.rich("welcomeMessage", {
-            b: (chunks) => <b>{chunks}</b>,
+            b: (chunks) => <span className="text-charcoal">{chunks}</span>,
           })}
         </p>
       </div>
