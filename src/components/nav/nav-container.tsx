@@ -37,6 +37,8 @@ const NavComponents = ({
 
   const path = usePathname();
 
+  console.log({ isOnTop });
+
   const t = useTranslations("navigation");
 
   useEffect(() => {
@@ -94,7 +96,7 @@ const NavComponents = ({
         className={`fixed z-10 w-full transition-transform duration-500 ease-in-out`}
       >
         <div
-          className={`relative flex h-[80px] items-center justify-between transition-all duration-500 ${isOnTop ? "bg-opacity-0" : "bg-opacity-90"} px-4 py-1 lg:bg-opacity-0`}
+          className={`bg-contrast relative flex h-[80px] items-center justify-between transition-all duration-500 ${isOnTop ? "bg-opacity-0" : "bg-opacity-100"} px-4 py-1`}
         >
           <div ref={mobileMenuHandlerRef}>
             <button

@@ -1,25 +1,22 @@
 import { useState, useEffect } from "react";
 
-const useScrollPosition = (scrollRef: React.RefObject<HTMLElement>) => {
+const useScrollPosition = () => {
   const [isOnTop, setIsOnTop] = useState<boolean>(true);
 
   useEffect(() => {
-    const element = scrollRef.current;
-    if (!element) return;
-
     const handleScroll = () => {
-      const isNearTop = element.scrollTop < 40;
+      const isNearTop = window.scrollY < 40;
       setIsOnTop(isNearTop);
     };
 
-    element.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     handleScroll();
 
     return () => {
-      element.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollRef]);
+  }, []);
 
   return { isOnTop };
 };
